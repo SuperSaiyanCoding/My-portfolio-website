@@ -1,0 +1,134 @@
+<head>
+   <link rel="stylesheet" href="/style.css" />
+
+ <title>A.V. personal site</title>
+   <!-- favicon -->
+  <link rel="icon" href="/favicon.ico?v=2">
+</head>
+<!-- Start Nav Section -->
+<script>
+  alert("This website is not 100% complete so some links and buttons might not work")
+</script>
+<nav id="navbar" class="navbar">
+  <ul class="nav-menu">
+    <li>
+      <a data-scroll="home" href="#home" class="dot active">
+        <span>Home</span>
+      </a>
+    </li>
+    <li>
+      <a data-scroll="about" href="#about" class="dot">
+        <span>About me</span>
+      </a>
+    </li>
+    <li>
+      <a data-scroll="services" href="#services" class="dot">
+        <span>My Journey</span>
+      </a>
+    </li>
+    <li>
+      <a data-scroll="test" href="#test" class="dot">
+        <span>Kewlgle</span>
+      </a>
+    </li>
+    <li>
+      <a data-scroll="contact" href="#contact" class="dot">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<!-- End Nav Section -->
+
+<!-- Start Home Section -->
+
+     
+  
+
+<section id="home" class="section">
+  <div class="container">
+    <div class="content-wrapper text-center">
+        <% if (locals.name){ %>
+  <%- include("alert.ejs") %>
+<% } %>
+
+        <div id="particles">
+  
+<h1 class="title"><strong><%=greeting%> , I'm Ayaan <br /> a <span class ="pro">Pro</span>grammer & Web developer</strong></h1>
+        <p><strong>Javascript, Node.js, Express.js, Three.js, Jquery, Kaboom.js, Phaser.js, EJS, Python, Pygame, Tkinter, Css, BootStrap, Flexbox , Grid & html</strong> </p>
+        <button>Hire Me</button>
+    
+  </div>
+</div>
+      </div>
+    </div>  
+  </div>
+</section>
+<!-- End Home Section -->
+
+<!-- Start About Me Section -->
+<section id="about">
+  <div class="container text-center">
+        <h1>About me</h1>
+        <p>I have been playing ♟️chess♟️ for around 9 years and I have been part of a school ♟️chess♟️ team that has become national champions. We have also participated in international tournaments. I love to play ⚽football⚽, 🏸badminton🏸 and 🏓table tennis🏓. I have been playing classical 🎸Guitar🎸 and 🎹Keyboard🎹 for around 7 years.</p>
+      
+  </div>
+</section>
+<!-- End About Me Section -->
+
+<!-- Start Services Section -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="content-wrapper text-center">
+      <div class="content">
+       <%- include("partials/timeline.ejs") %>
+    
+      </div>
+    </div>
+  </div>
+</section>  
+<!-- End Services Section -->
+
+<!-- Start Testimonials Section -->
+<section id="test" class="section">
+  <div class="container">
+    <div class="content-wrapper text-center">
+      <div class="content">
+        <h1>Founder of Kewlgle</h1>
+        <p class = "white">I am the founder of <a class = "white" href = "https://kewlgle.supersaiyancoding.repl.co/" target="_blank"><strong>Kewlgle</strong></a>...</p>
+        <div class="client">
+          <p class = "white">Which is an organisation that makes/hosts javascript & python applications wheather it is frontend or backend. If you want to join the team than you can ⬇contact me⬇.</p>
+     
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+<!-- End Testimonials Section -->
+
+<!-- Start Contact Section -->
+<section id="contact">
+  <div class="container">
+    <div class="content-wrapper text-center">
+      <div class="content">
+         <%- include("partials/contact.ejs") %>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Contact Section -->
+
+
+<!-- Start Footer Section -->
+<footer>
+  <div class="container text-center">
+    <p>&copy; All rights reserved A.V. 2023</p>
+  </div>
+</footer>
+   <script
+  src="https://code.jquery.com/jquery-3.7.0.js"
+  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+  crossorigin="anonymous"></script>
+<script src="/script.js"></script>
+
+<!-- End Footer Section -->
